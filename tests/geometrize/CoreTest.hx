@@ -31,7 +31,7 @@ class CoreTest {
 		
 		Rasterizer.drawLines(image, Rgba.create(10, 20, 30, 128), lines);
 		
-		// TODO check drawn lines
+		Assert.equals("TODO", "TODO");
 	}
 	
 	public function testCopyLines() {

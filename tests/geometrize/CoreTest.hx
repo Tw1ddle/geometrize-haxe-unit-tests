@@ -14,8 +14,6 @@ class CoreTest {
 		var current = Bitmap.create(10, 10, currentColor);
 		var lines:Array<Scanline> = [ for (y in 0...10) new Scanline(y, 0, 10) ];
 		
-		trace(Core.computeColor(target, current, lines, alpha));
-		
 		// Note the only alpha term used is the scanline alpha
 		return Core.computeColor(target, current, lines, alpha);
 	}

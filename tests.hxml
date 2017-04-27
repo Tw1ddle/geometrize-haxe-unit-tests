@@ -1,0 +1,7 @@
+-lib utest
+-lib sure
+
+-cp geometrize
+-cp tests
+
+-main TestMain

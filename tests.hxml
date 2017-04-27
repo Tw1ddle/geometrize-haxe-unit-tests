@@ -1,6 +1,7 @@
 -lib utest
 -lib sure
 
+#-lib geometrize-haxe
 -cp geometrize
 -cp tests
 

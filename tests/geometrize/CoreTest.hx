@@ -12,7 +12,7 @@ class CoreTest {
 	private function computeScanlinesColor(targetColor:Rgba, currentColor:Rgba, alpha:Int):Rgba {
 		var target = Bitmap.create(10, 10, targetColor);
 		var current = Bitmap.create(10, 10, currentColor);
-		var lines:Array<Scanline> = [ for (y in 0...10) new Scanline(y, 0, 10) ];
+		var lines:Array<Scanline> = [ for (y in 0...10) new Scanline(y, 0, 9) ];
 		
 		// Note the only alpha term used is the scanline alpha
 		return Core.computeColor(target, current, lines, alpha);
@@ -25,7 +25,7 @@ class CoreTest {
 	
 	public function testDrawLines() {
 		var image = Bitmap.create(50, 50, Rgba.create(10, 20, 30, 128));
-		var lines:Array<Scanline> = [ for (y in 10...50) new Scanline(y, 0, 50) ];
+		var lines:Array<Scanline> = [ for (y in 10...50) new Scanline(y, 0, 49) ];
 		
 		Rasterizer.drawLines(image, Rgba.create(10, 20, 30, 128), lines);
 		

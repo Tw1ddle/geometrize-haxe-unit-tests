@@ -1,4 +1,5 @@
 [![Project logo](https://github.com/Tw1ddle/geometrize-haxe-unit-tests/blob/master/screenshots/logo.png?raw=true "Geometrize Haxe - recreating images as geometric shapes unit tests logo")](http://www.samcodes.co.uk/project/geometrize-haxe-web/)
+[![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/Tw1ddle/geometrize-haxe-unit-tests/blob/master/LICENSE)
 
 [![Travis Unit Test Build Status](https://img.shields.io/travis/Tw1ddle/geometrize-haxe-unit-tests.svg?style=flat-square)](https://travis-ci.org/Tw1ddle/geometrize-haxe-unit-tests)
 

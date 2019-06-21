@@ -20,13 +20,28 @@ class BitmapTest {
 		}
 	}
 	
-	public function testCreateBitmapFromData() {
+	public function testCreateBitmapFromBytesData() {
 		var makeBitmap = function(width:Int, height:Int):Bitmap {
 			var data = Bytes.alloc(width * height * 4);
 			for (i in 0...data.length) {
 				data.set(i, Util.random(0, 255));
 			}
 			return Bitmap.createFromBytes(width, height, data);
+		}
+		
+		for (i in 0...10) {
+			var bitmap = makeBitmap(50, 50);
+			Assert.notEquals(bitmap, null);
+		}
+	}
+	
+	public function testCreateBitmapFromArrayData() {
+		var makeBitmap = function(width:Int, height:Int):Bitmap {
+			var data = new Array();
+			for (i in 0...(width * height * 4)) {
+				data.push(Util.random(0, 255));
+			}
+			return Bitmap.createFromByteArray(width, height, data);
 		}
 		
 		for (i in 0...10) {

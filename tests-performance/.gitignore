@@ -1,2 +1,4 @@
 bin/**
+Export
+tmp*
 .DS_Store

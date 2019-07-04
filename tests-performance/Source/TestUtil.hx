@@ -6,6 +6,7 @@ import geometrize.bitmap.Rgba;
 import geometrize.runner.ImageRunner;
 import geometrize.exporter.SvgExporter;
 import geometrize.runner.ImageRunnerOptions;
+import geometrize.shape.ShapeType;
 import haxe.io.Bytes;
 
 class TestUtil {
@@ -29,6 +30,18 @@ class TestUtil {
 	  	return Sys.time() * 1000.0;
 		#end
 		  return Date.now().getTime();
+	}
+
+	public static function allShapeTypes() {
+		return [
+			ShapeType.RECTANGLE,
+			ShapeType.ROTATED_RECTANGLE,
+			ShapeType.TRIANGLE,
+			ShapeType.ELLIPSE,
+			ShapeType.ROTATED_ELLIPSE,
+			ShapeType.CIRCLE,
+			ShapeType.LINE
+		];
 	}
 
 }

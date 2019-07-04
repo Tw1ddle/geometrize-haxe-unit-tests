@@ -11,6 +11,8 @@ cd tests-performance
 lime test cpp
 ```
 
+It takes a while. Each tests writes the result images as svg in this folder.
+
 
 ## haxe/lime beginner notes
 
@@ -42,3 +44,7 @@ Must have:
  <!-- * using the same API in different targets results / animations / progress -->
  * possibility of measure rendering progress on each step in different technologies
    * research efficient ways of rendering the progress
+
+
+
+   

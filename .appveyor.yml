@@ -49,4 +49,5 @@ install:
 
 build_script:
   - cd $APPVEYOR_BUILD_FOLDER
-  - haxe run_tests_local.hxml
+  - chmod +x build_and_run_tests.sh
+  - ./build_and_run_tests.sh

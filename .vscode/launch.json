@@ -1,2 +1,7 @@
-{ 
+{
+    "configurations": [
+        {
+            "preLaunchTask": "Build And Run Tests",
+        }
+    ]   
 }
